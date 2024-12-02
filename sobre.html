@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Nós - Peata Playground</title>
+    <link rel="stylesheet" href="css/sobre.css">
+    <style>
+        /* Classe de sobreposição que aparece apenas ao inspecionar */
+        .fake-content {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            color: black;
+            font-size: 3em;
+            text-align: center;
+            padding-top: 20%;
+            display: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="fake-content">ITM GRANDE...</div>
+
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Peata Playground Logo">
+            <h1>Peata Playground</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="campanhas.html">Campanhas</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sobre">
+            <h2>Sobre a Peata Playground</h2>
+            <p>A <strong>Peata Playground S.A.</strong> foi fundada em 2024, com a missão de criar brinquedos sustentáveis para animais de estimação. Com sede em Lisboa (Portugal) e produção em Ostrava (Chéquia), a nossa empresa alia sustentabilidade e inovação para oferecer produtos de alta qualidade e ecológicos.</p>
+            
+            <h3>Missão e Visão</h3>
+            <p><strong>Missão:</strong> Proporcionar aos donos de animais brinquedos que promovam o bem-estar, diversão e desenvolvimento dos seus animais, através de produtos seguros e sustentáveis.</p>
+            <p><strong>Visão:</strong> Tornar-nos a principal referência em brinquedos inovadores, seguros e ecológicos para animais de estimação, contribuindo para um futuro mais sustentável.</p>
+            
+            <h3>Nossos Produtos e Compromisso com a Sustentabilidade</h3>
+            <p>A Peata Playground utiliza materiais eco-friendly, como borracha natural, algodão orgânico e fibras recicladas, garantindo que todos os produtos sejam seguros (não tóxicos e sem peças pequenas que possam ser engolidas). Além disso, parte dos nossos lucros é doada a instituições de proteção animal, reafirmando o nosso compromisso com o bem-estar animal.</p>
+            
+            <h3>A Nossa Equipa</h3>
+            <p>A Peata Playground S.A. foi criada por três sócios, que contam com o apoio dos seus familiares e amigos. Este suporte foi fundamental para o crescimento e a identidade da empresa, baseada em valores como confiança, sustentabilidade e união. Internamente, a empresa é organizada em cinco grupos principais:</p>
+            <ul>
+                <li><strong>Direção Geral:</strong> Responsável pelas decisões finais.</li>
+                <li><strong>Recursos Humanos:</strong> Gestão de recrutamento e desenvolvimento de talentos.</li>
+                <li><strong>Sustentabilidade:</strong> Implementação de políticas ecológicas.</li>
+                <li><strong>Finanças:</strong> Monitoramento da saúde financeira.</li>
+                <li><strong>Conselho Fiscal:</strong> Fiscalização da gestão financeira.</li>
+            </ul>
+
+            <h3>Parcerias e Contratos</h3>
+            <p>A Peata Playground S.A. estabeleceu parcerias com empresas como <strong>Ecoibéria S.A.</strong>, <strong>KRESPA</strong> e <strong>SGL Technologies GmbH</strong> para obter materiais como tintas, borrachas e fibras naturais. Também possui um contrato com a Câmara Municipal de Ostrava, com o objetivo de promover a empregabilidade na região através da produção local.</p>
+
+            <h3>Campanhas e Compromisso Social</h3>
+            <p>Para a época natalícia de 2024, a Peata Playground lançará uma campanha especial com produtos de temática natalícia, permitindo que os animais também possam celebrar e receber um presente. Esta iniciativa reforça o nosso compromisso com a criação de produtos que fazem a diferença, tanto para os animais quanto para os seus donos.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Peata Playground S.A. © 2024 - Todos os direitos reservados.</p>
+        <p>Instagram: @peataplayground | Email: peataplayground@peataplaygroundsa.com | Telefone: 214 043 186 | Telemóvel: 939 060 716</p>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                document.querySelector(".fake-content").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

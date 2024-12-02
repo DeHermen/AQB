@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Peata Playground</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <style>
+        /* Classe de sobreposição que aparece apenas ao inspecionar */
+        .fake-content {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            color: black;
+            font-size: 3em;
+            text-align: center;
+            padding-top: 20%;
+            display: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="fake-content">SERÁ QUE HOJE É SÁBADO???...</div>
+
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Peata Playground Logo">
+            <h1>Peata Playground</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="campanhas.html">Campanhas</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-hero">
+            <h2>Entre em Contato Conosco</h2>
+            <p>Adoramos ouvir nossos clientes! Preencha o formulário abaixo ou entre em contato diretamente.</p>
+        </section>
+        
+        <section class="contact-info">
+            <h3>Informações de Contato</h3>
+            <p><strong>Email:</strong> peataplayground@peataplaygroundsa.com</p>
+            <p><strong>Telefone:</strong> 214 043 186</p>
+            <p><strong>Telemóvel:</strong> 939 060 716</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/peataplayground" target="_blank">@peataplayground</a></p>
+        </section>
+
+        <section class="contact-form">
+            <h3>Envie-nos uma Mensagem</h3>
+            <form action="#" method="post">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Peata Playground S.A. © 2024</p>
+        <p>Instagram: @peataplayground | Email: peataplayground@peataplaygroundsa.com | Telefone: 214 043 186 | Telemóvel: 939 060 716</p>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                document.querySelector(".fake-content").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

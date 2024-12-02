@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peata Playground - Brinquedos Sustentáveis para Animais</title>
+    <link rel="stylesheet" href="css/styles.css">
+        <script src="js/scripts.js" defer></script>
+        <style>
+            /* Classe de sobreposição que aparece apenas ao inspecionar */
+            .fake-content {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                color: black;
+                font-size: 3em;
+                text-align: center;
+                padding-top: 20%;
+                display: none;
+                z-index: 1000;
+            }
+        </style>
+</head>
+<body>
+    <div class="fake-content">HELLO CURIOSO HAHA...</div>
+
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Peata Playground Logo">
+            <h1>Peata Playground</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="campanhas.html">Campanhas</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Onde o brincar é levado a sério!</h2>
+            <p>Brinquedos ecológicos e sustentáveis para o seu animal de estimação</p>
+            <button class="cta">Explore Produtos</button>
+        </section>
+        <section id="destaques">
+            <h3>Produtos em Destaque</h3>
+            <div class="produtos-grid">
+                <div class="produto">
+                    <img src="imgs/birnquedo-de-borracha-natural-trixie.jpg" alt="Brinquedo de Borracha Natural para Cães">
+                    <h4>Borracha Natural para Cães</h4>
+                    <p>Resistente e ecológico, perfeito para cães.</p>
+                    <button class="comprar-btn">Comprar Agora</button>
+                </div>
+                <div class="produto">
+                    <img src="imgs/il_340x270.2726243101_o8k7.webp" alt="Brinquedo de Algodão Orgânico para Gatos">
+                    <h4>Algodão Orgânico para Gatos</h4>
+                    <p>Feito com materiais orgânicos para o bem-estar do seu gato.</p>
+                    <button class="comprar-btn">Comprar Agora</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Peata Playground S.A. © 2024 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                document.querySelector(".fake-content").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

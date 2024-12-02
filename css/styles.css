@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+header {
+    background-color: #1A73E8;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+header .logo img {
+    height: 60px;
+}
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 2px 2px #333;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: #FFD700;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+nav a:hover {
+    color: #FF4500;
+    transform: scale(1.1);
+}
+#hero {
+    background: linear-gradient(rgba(255, 215, 0, 0.9), rgba(255, 255, 255, 0.7)), url('images/pets-hero.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid #1A73E8;
+    animation: fadeInHero 1.5s ease;
+}
+#hero h2 {
+    font-size: 3rem;
+    color: #FF4500;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 1rem;
+    animation: bounceIn 1s ease;
+}
+#hero p {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+#hero .cta {
+    background-color: #FF4500;
+    color: #FFF;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#hero .cta:hover {
+    background-color: #FF6347;
+    transform: scale(1.05);
+}
+#destaques {
+    padding: 2rem;
+    text-align: center;
+    background-color: #FFFAE6;
+}
+#destaques h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #FF4500;
+    text-shadow: 1px 1px #333;
+}
+.produtos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.produto {
+    background-color: #FFF;
+    padding: 1.5rem;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border: 2px solid #FFD700;
+    text-align: center;
+}
+.produto:hover {
+    transform: translateY(-10px);
+}
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.produto h4 {
+    font-size: 1.4rem;
+    color: #1A73E8;
+    margin-bottom: 0.5rem;
+}
+.produto p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.comprar-btn {
+    background-color: #1A73E8;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.comprar-btn:hover {
+    background-color: #005BBB;
+    transform: scale(1.05);
+}
+footer {
+    background-color: #1A73E8;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInHero {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
